@@ -1,0 +1,26 @@
+# liballwinner advanced configuration
+
+menu "liballwinner of chip platform Configuration"
+
+	depends on PACKAGE_liballwinner
+
+	choice
+
+		prompt "select the chip platform"
+		default R16_LIBALLWINNER
+
+		help
+		  Select the chip platform
+
+		config R8_LIBALLWINNER
+			bool "R8_LIBALLWINNER"
+
+		config R16_LIBALLWINNER
+			bool "R16_LIBALLWINNER"
+
+		config R58_LIBALLWINNER
+			bool "R58_LIBALLWINNER"
+
+	endchoice
+
+endmenu
